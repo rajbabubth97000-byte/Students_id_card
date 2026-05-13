@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ae52a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.id-card {
+    background-color: #7caf94;
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(65, 21, 21, 0.1);
+    text-align: center;
+}
+/* Pehle card mein transition add karein */
+.id-card {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Hover effect */
+.id-card:hover {
+    transform: translateY(2px); /* Card thoda upar move hoga */
+    box-shadow: 20px 20px 20px red /* Shadow gehri ho jayegi */
+}
+
+/* Header/Logo */
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #1a2a44;
+    background-color: #d59a46;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+
+/* Profile Photo */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-border {
+    width: 200px;
+    height: 200px;
+    border: 8px solid #1e60ad; /* Blue border from image */
+    border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.profile-border img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Name and Badge */
+h1 {
+    background-color: #f2c549;
+    color: rgb(229, 43, 43);
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.badge {
+    background-color: #1e60ad;
+    color: white;
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Info Details */
+.details {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.row {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #333;
+}
+
+.label {
+    font-weight: 700;
+    width: 60px;
+    display: inline-block;
+}
+
+.value {
+    font-weight: 400;
+}
+
+/* Barcode Section */
+.barcode {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.barcode-lines {
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    background: repeating-linear-gradient(
+      90deg,
+      #333,
+      #333 2px,
+      #fff 2px,
+      #fff 4px,
+      #333 4px,
+      #333 5px,
+      #fff 5px,
+      #fff 8px
+    );
+}
